@@ -1,0 +1,249 @@
+body {
+    margin: 25px 80px;
+    background-image: url("https://images.unsplash.com/photo-1581985673473-0784a7a44e39?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.navbar .left {
+    width: 100px;
+    height: 100px;
+}
+
+.left img {
+    width: 200px;
+    height: auto;
+    /* border-radius: 50%; */
+}
+
+.navbar .right {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-areas:
+        "profile profile profile"
+        "picture name-details name-details "
+        "delivery delivery delivery"
+        "billing billing billing"
+        "orders orders orders"
+        "list list list"
+        "product product product"
+        "all-product all-product all-product";
+
+    grid-gap: 16px;
+    width: 100%;
+}
+
+#profile {
+    grid-area: profile;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+}
+
+.profile h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.profile p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#picture {
+    grid-area: picture;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+#name-details {
+    grid-area: name-details;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.name-details h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.name-details{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#delivery {
+    grid-area: delivery;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.delivery h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.delivery p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#billing {
+    grid-area: billing;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.billing h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.billing p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#orders {
+    grid-area: orders;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.orders h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+
+#orders ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#orders ul li {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold
+}
+
+#list {
+    grid-area: list;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.list h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+#list ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.list ul li{
+    font-size: 24px;
+    font-weight: bold
+}
+
+#product {
+    grid-area: product;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.product h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.product p{
+    font-size: 24px;
+    font-weight: bold
+}
+.product a{
+    text-decoration: none;
+}
+
+#all-product {
+    grid-area: all-product;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.all-product h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.all-product ul{
+    list-style-type: none;
+}
+.all-product ul li{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.project{
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.2);
+}

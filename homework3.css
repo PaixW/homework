@@ -1,0 +1,137 @@
+body {
+    margin: 25px 80px;
+    background-image: url("https://images.unsplash.com/photo-1581985673473-0784a7a44e39?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgb(201, 1, 27); */
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    /* padding: 0 16px; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.navbar .left {
+    width: 100px;
+    height: 100px;
+    /* background-color: rgb(222, 34, 34); */
+}
+
+.left img {
+    width: 200px;
+    height: auto;
+    
+    position: relative;
+    top: -10px;
+}
+
+.navbar .right {
+    width: 50px;
+    height: 50px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-areas:
+        "order order"
+        "delivery  billing"
+        "adress  billing-adress";
+
+    grid-gap: 10px;
+    width: 100%;
+    /* margin-bottom: 24px; */
+}
+.project {
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+#order {
+    grid-area: order;
+    position: relative;
+}
+.order-details img{
+    width: 17%;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    right: 300px;
+}
+
+#delivery {
+    grid-area: delivery;
+}
+
+#billing {
+    grid-area: billing;
+}
+
+#adress {
+    grid-area: adress;
+}
+
+#billing-adress {
+    grid-area: billing-adress;
+}
+h2 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+p {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.status {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.status:hover {
+    background-color: #0056b3;
+    
+}
